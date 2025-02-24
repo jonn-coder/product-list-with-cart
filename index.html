@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product list with cart</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- modal -->
+      <div class="modal-wrapper">
+        <div class="loading">
+          Loading <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="modal">
+          <img src="assets/images/icon-order-confirmed.svg" alt="" />
+          <h2 class="headline">Order Confirmed</h2>
+          <p>We hope you enjoy your food!</p>
+          <!-- ordered items -->
+          <ul class="order-items">
+            <!-- items here -->
+          </ul>
+
+          <div class="order-total">
+            <p class="left">Order Total</p>
+            <span class="right price">$00.00</span>
+          </div>
+          <button class="start-new-order">Start New Order</button>
+        </div>
+      </div>
+      
+      <main>
+        <!-- product start here -->
+        <div class="product">
+          <div class="top">
+            <h1 class="headline">Desserts</h1>
+            <a href="#cart" class="view-cart">
+              <img src="assets/images/icon-add-to-cart.svg" alt="">
+              <span class="quantity">0</span>
+            </a>
+          </div>
+          
+          <ul class="product-list">
+            <!-- list here -->
+          </ul>
+        </div>
+        <!-- product end here -->
+
+        <!-- cart start here -->
+        <aside id="cart">
+          <div class="cart">
+            <h2 class="headline">Your Cart (<!-- Quantity -->)</h2>
+
+            <div class="item-added">
+              <!-- list items -->
+              <ul class="cart-items">
+                <!-- item start here -->
+                <!-- items goes here -->
+                <!-- item end here -->
+              </ul>
+              <!-- cart items end here-->
+
+              <!-- total cart price -->
+              <div class="order-total">
+                <p class="left">Order Total</p>
+                <span class="right price">$46.50</span>
+              </div>
+              <!-- ############ -->
+
+              <!-- deliverer -->
+              <div class="deliverer">
+                <img
+                  aria-hidden="true"
+                  src="assets/images/icon-carbon-neutral.svg"
+                  alt=""
+                />
+                <p>This is a <span>carbon-neutral</span> delivery</p>
+              </div>
+              <!-- ########### -->
+
+              <!-- confirm order -->
+              <button class="confirm-order-btn">Confirm Order</button>
+              <!-- ############ -->
+            </div>
+
+            <!-- no items -->
+            <div class="item-empty">
+              <img
+                src="assets/images/illustration-empty-cart.svg"
+                alt="image illustrating empty cart"
+              />
+              <p>Your added items will appear here</p>
+            </div>
+          </div>
+        </aside>
+        <!-- cart end here -->
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
