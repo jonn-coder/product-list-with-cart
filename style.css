@@ -464,8 +464,9 @@ main .active .item-added {
 
 /* display modal if .has-modal class added to main */
 .has-modal .modal-wrapper {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: fade-in;
   animation-duration: .3s;
   animation-timing-function: linear;
@@ -869,7 +870,7 @@ main .active .item-added {
 
   /* display modal if .has-modal class added to main */
   .has-modal .modal-wrapper {
-    display: grid;
+    display: flex;
   }
 
   .wrapper .modal-wrapper .modal {
@@ -877,7 +878,7 @@ main .active .item-added {
     padding: 2.5em 2.45em 2.55em 2.45em;
     width: 600px;
     border-radius: 0.8em;
-    margin-top: 0em;
+    margin-top: 1em;
   }
 }
 
